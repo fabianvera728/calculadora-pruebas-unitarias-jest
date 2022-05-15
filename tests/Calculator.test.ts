@@ -32,9 +32,14 @@ describe('Calculator should', () => {
         expect(calculator.divisionTwoNumbers(6, 3)).toBe(expectedResult);
     });
 
+    it('calculate division between two numbers a y b, be diferent by NAN', () => {
+        const calculator = new Calculator();
+        expect(calculator.divisionTwoNumbers(6, 3)).not.toBeNaN();
+    });
+
     test('launch expection when calculate division of one number inside zero', () => {
         const calculator = new Calculator();
-        expect(calculator.divisionTwoNumbers(6, 0)).toThrow();
+        expect(calculator.divisionTwoNumbers(6, 0)).toThrowError(ErrorDivisionByZero);
     });
 
 })
