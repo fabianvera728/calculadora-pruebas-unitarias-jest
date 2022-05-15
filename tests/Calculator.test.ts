@@ -32,6 +32,11 @@ describe('Calculator should', () => {
         expect(calculator.divisionTwoNumbers(6, 3)).toBe(expectedResult);
     });
 
+    it('calculate division between two numbers a y b, must be greater than 1', () => {
+        const calculator = new Calculator();
+        expect(calculator.divisionTwoNumbers(6, 3)).toBeGreaterThan(1);
+    });
+
     it('calculate division between two numbers a y b, be diferent by NAN', () => {
         const calculator = new Calculator();
         expect(calculator.divisionTwoNumbers(6, 3)).not.toBeNaN();
