@@ -1,0 +1,19 @@
+{
+  "name": "calculadora",
+  "version": "1.0.0",
+  "description": "Pruebas con jest",
+  "main": "index.js",
+  "repository": "https://github.com/fabianvera728/calculadora-pruebas-unitarias-jest",
+  "author": "Fabian Vera",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.5.1",
+    "jest": "^28.1.0",
+    "ts-jest": "^28.0.2",
+    "typescript": "^4.6.4"
+  }
+}
